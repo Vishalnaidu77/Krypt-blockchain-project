@@ -1,5 +1,3 @@
-// https://eth-sepolia.g.alchemy.com/v2/-wqvNJtlPqYn1dPMOxtw2
-
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
