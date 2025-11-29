@@ -5,6 +5,7 @@ import { BsInfoCircle} from 'react-icons/bs'
 
 import { TransactionContext } from '../Context/TransactionContext'
 import { Loader } from './'
+import { shortenAddress } from '../utils/shortenAddress'
 
 const commonStyle = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white"
 
@@ -86,7 +87,8 @@ const { connectWallet, currentAccount, formData, handleChange, sendTransactions 
               </div>
               <div>
                 <p className='text-white font-light text-sm'>
-                  Address
+                  {shortenAddress("0x45452d54fs5d485s4d52s1d454s8d45s4d8f45s4d")}
+                  {/* {shortenAddress(currentAccount)} */}
                 </p>
                 <p className='text-white font-semibold text-lg mt-1'>
                   Ethereum
